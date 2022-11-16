@@ -22,9 +22,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>4/10</span>
             </div>
         
             
@@ -43,9 +43,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>4/10</span>
             </div>
         
             
@@ -113,27 +113,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -150,9 +138,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -164,10 +164,10 @@ import {Card, CardText, CardBody, CardTitle, ListGroup, ListGroupItem, Button} f
 import moment from 'moment'
 import {Link} from "react-router-dom";
 &nbsp;
-const shortDateFormat = <span class="cstat-no" title="statement not covered" >'MM/DD/YYYY';</span>
-const longDateFormat = <span class="cstat-no" title="statement not covered" >'MM/DD/YYYY hh:mm a';</span>
+const shortDateFormat = 'MM/DD/YYYY';
+const longDateFormat = 'MM/DD/YYYY hh:mm a';
 &nbsp;
-const Product = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> product, onDelete }) =&gt; {</span>
+const Product = <span class="fstat-no" title="function not covered" >({</span> product, onDelete }) =&gt; {
   const receiptDate =  <span class="cstat-no" title="statement not covered" >product.receiptDate ? moment(product.receiptDate).format(shortDateFormat) : '-';</span>
   const expirationDate =  <span class="cstat-no" title="statement not covered" >product.expirationDate ? moment(product.expirationDate).format(shortDateFormat) : '-';</span>
   const createdAt = <span class="cstat-no" title="statement not covered" >product.createdAt ? moment(product.createdAt).format(longDateFormat) : '-';</span>
@@ -203,7 +203,7 @@ const Product = <span class="cstat-no" title="statement not covered" ><span clas
   );
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >Product.propTypes = {</span>
+Product.propTypes = {
   product: PropTypes.object.isRequired,
   onDelete: PropTypes.func.isRequired,
 };
@@ -216,7 +216,7 @@ export default Product;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Nov 16 2022 01:05:42 GMT+0100 (heure normale d’Afrique de l’Ouest)
+                at Wed Nov 16 2022 08:48:22 GMT+0100 (heure normale d’Afrique de l’Ouest)
             </div>
         </div>
         <script src="..\..\..\prettify.js"></script>

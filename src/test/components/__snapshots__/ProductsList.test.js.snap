@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test ProductForm component 1`] = `
+<Container
+  tag="div"
+>
+  <Row
+    className="mb-5"
+    key="0"
+    tag="div"
+  >
+    <Col
+      key="1"
+      sm="4"
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Product
+        onDelete={[MockFunction]}
+        product={
+          Object {
+            "brand": "JVC",
+            "categories": Array [
+              1,
+              2,
+              9,
+            ],
+            "createdAt": "2019-04-30T16:00:40+03:00",
+            "expirationDate": null,
+            "featured": true,
+            "id": 1,
+            "itemsInStock": 2,
+            "name": "TV",
+            "rating": 9,
+            "receiptDate": null,
+          }
+        }
+      />
+    </Col>
+    <Col
+      key="2"
+      sm="4"
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Product
+        onDelete={[MockFunction]}
+        product={
+          Object {
+            "brand": "Apple",
+            "categories": Array [
+              5,
+              4,
+              3,
+            ],
+            "createdAt": "2019-05-14T16:00:40+03:00",
+            "expirationDate": "2019-05-20",
+            "featured": false,
+            "id": 2,
+            "itemsInStock": 0,
+            "name": "iPhone",
+            "rating": 2,
+            "receiptDate": "2019-06-14",
+          }
+        }
+      />
+    </Col>
+    <Col
+      key="3"
+      sm="4"
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Product
+        onDelete={[MockFunction]}
+        product={
+          Object {
+            "brand": "HP",
+            "categories": Array [
+              2,
+            ],
+            "createdAt": "2019-05-20T16:00:40+03:00",
+            "expirationDate": null,
+            "featured": false,
+            "id": 3,
+            "itemsInStock": 10,
+            "name": "laptop",
+            "rating": 5,
+            "receiptDate": null,
+          }
+        }
+      />
+    </Col>
+  </Row>
+</Container>
+`;
+
+exports[`should test Products Container component 1`] = `undefined`;
+
+exports[`test Products List component 1`] = `
+<Container
+  tag="div"
+/>
+`;

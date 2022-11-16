@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668557142869" clover="3.2.0">
-  <project timestamp="1668557142869" name="All files">
-    <metrics statements="153" coveredstatements="61" conditionals="55" coveredconditionals="29" methods="70" coveredmethods="21" elements="278" coveredelements="111" complexity="0" loc="153" ncloc="153" packages="11" files="24" classes="24"/>
+<coverage generated="1668584902592" clover="3.2.0">
+  <project timestamp="1668584902593" name="All files">
+    <metrics statements="153" coveredstatements="74" conditionals="55" coveredconditionals="31" methods="70" coveredmethods="25" elements="278" coveredelements="130" complexity="0" loc="153" ncloc="153" packages="11" files="24" classes="24"/>
     <package name="src">
       <metrics statements="17" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
       <file name="App.js" path="C:\Users\pc\Documents\test-jest\test-React\src\App.js">
@@ -101,19 +101,19 @@
       </file>
     </package>
     <package name="src.components.Products">
-      <metrics statements="26" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="11" coveredmethods="0"/>
+      <metrics statements="26" coveredstatements="10" conditionals="8" coveredconditionals="0" methods="11" coveredmethods="3"/>
       <file name="Product.js" path="C:\Users\pc\Documents\test-jest\test-React\src\components\Products\Product.js">
-        <metrics statements="10" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="4" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="15" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
       </file>
       <file name="ProductsContainer.js" path="C:\Users\pc\Documents\test-jest\test-React\src\components\Products\ProductsContainer.js">
         <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
@@ -129,13 +129,13 @@
         <line num="39" count="0" type="stmt"/>
       </file>
       <file name="ProductsList.js" path="C:\Users\pc\Documents\test-jest\test-React\src\components\Products\ProductsList.js">
-        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Products.Add">
@@ -151,32 +151,32 @@
       </file>
     </package>
     <package name="src.components.Products.Update">
-      <metrics statements="44" coveredstatements="23" conditionals="34" coveredconditionals="23" methods="20" coveredmethods="6"/>
+      <metrics statements="44" coveredstatements="26" conditionals="34" coveredconditionals="25" methods="20" coveredmethods="7"/>
       <file name="ProductForm.js" path="C:\Users\pc\Documents\test-jest\test-React\src\components\Products\Update\ProductForm.js">
-        <metrics statements="28" coveredstatements="15" conditionals="26" coveredconditionals="17" methods="14" coveredmethods="3"/>
+        <metrics statements="28" coveredstatements="18" conditionals="26" coveredconditionals="19" methods="14" coveredmethods="4"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="cond" truecount="0" falsecount="5"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="2" falsecount="3"/>
+        <line num="23" count="1" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
         <line num="71" count="0" type="stmt"/>
         <line num="72" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="78" count="11" type="stmt"/>
+        <line num="78" count="22" type="stmt"/>
         <line num="93" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="98" count="11" type="stmt"/>
+        <line num="98" count="22" type="stmt"/>
         <line num="106" count="0" type="stmt"/>
         <line num="118" count="0" type="stmt"/>
         <line num="126" count="0" type="stmt"/>
@@ -197,13 +197,13 @@
       <file name="validators.js" path="C:\Users\pc\Documents\test-jest\test-React\src\components\Products\Update\validators.js">
         <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="7" count="2" type="stmt"/>
-        <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="src.gateways">
@@ -229,7 +229,7 @@
       </file>
       <file name="products.js" path="C:\Users\pc\Documents\test-jest\test-React\src\mocks\products.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.reducers">

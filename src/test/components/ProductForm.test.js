@@ -11,11 +11,13 @@ test('should test ProductForm component', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-// test('should handle onSubmit handler', () => {
-//   const onSubmitSpy = jest.fn();
-//   const wrapper = shallow(<ProductForm categories={categories} onSave={onSubmitSpy}  onSubmit={(e)=>onSubmitSpy(e)} />);
-//   expect(wrapper).toMatchSnapshot();
-//   wrapper.find('Form').simulate('submit');
-//   expect(onSubmitSpy).toHaveBeenCalled();
-// });
+test('should handle onSubmit handler', () => {
+  const onSubmitSpy = jest.fn();
+  const onSaveSpy = jest.fn();
+  const preventDefault = jest.fn();
+  const wrapper = shallow(<ProductForm categories={categories} onSave={onSaveSpy}  onSubmit={onSubmitSpy} />);
+  expect(wrapper).toMatchSnapshot();
+  wrapper.find('Form').simulate('submit',{ preventDefault });
+  expect(onSubmitSpy).toHaveBeenCalled();
+});
 

@@ -22,9 +22,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -36,16 +36,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,17 +92,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -110,7 +108,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,15 +122,15 @@ import Product from './Product';
 import { Container, Row, Col } from 'reactstrap'
 import { chunk } from 'lodash'
 &nbsp;
-const ProductList = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> products, onDelete }) =&gt; {</span>
-  const productsGroups = <span class="cstat-no" title="statement not covered" >chunk(products, 3)</span>
+const ProductList = ({ products, onDelete }) =&gt; {
+  const productsGroups = chunk(products, 3)
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;Container&gt;
-      {productsGroups.map(<span class="fstat-no" title="function not covered" >(p</span>roductsGroup, index) =&gt; (
-<span class="cstat-no" title="statement not covered" >        &lt;Row key={index} className="mb-5"&gt;</span>
-          {productsGroup.map(<span class="fstat-no" title="function not covered" >pr</span>oduct =&gt; (
-<span class="cstat-no" title="statement not covered" >            &lt;Col sm="4" key={product.id} &gt;</span>
+      {productsGroups.map((productsGroup, index) =&gt; (
+        &lt;Row key={index} className="mb-5"&gt;
+          {productsGroup.map(product =&gt; (
+            &lt;Col sm="4" key={product.id} &gt;
               &lt;Product product={product} onDelete={onDelete} /&gt;
             &lt;/Col&gt;
           ))}
@@ -140,7 +140,7 @@ const ProductList = <span class="cstat-no" title="statement not covered" ><span 
   );
 };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >ProductList.propTypes = {</span>
+ProductList.propTypes = {
   products: PropTypes.array.isRequired,
   onDelete: PropTypes.func.isRequired,
 };
@@ -153,7 +153,7 @@ export default ProductList;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Nov 16 2022 01:05:42 GMT+0100 (heure normale d’Afrique de l’Ouest)
+                at Wed Nov 16 2022 08:48:22 GMT+0100 (heure normale d’Afrique de l’Ouest)
             </div>
         </div>
         <script src="..\..\..\prettify.js"></script>
