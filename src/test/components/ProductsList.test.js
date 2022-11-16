@@ -13,21 +13,4 @@ test('should test ProductForm component', () => {
 
 
 
-// test('test Products List component', () => {
 
-  
-//   expect(wrapper).toMatchSnapshot();
-// });
-
-// test('should call handleAddTodo method', () => {
-//   const instance = wrapper.instance();
-//   const value = 'Publish Article';
-//   instance.handleAddTodo({
-//     preventDefault: () => {},
-//     target: {
-//       todo: {
-//         value
-//       }
-//     }
-//   });
-// });
